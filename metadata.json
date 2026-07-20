@@ -1,0 +1,6 @@
+{
+  "name": "Naija Supermarket Store",
+  "description": "A production-ready e-commerce demo of a premier Nigerian supermarket, featuring a dynamic shopping cart, localized delivery zones, local Paystack payment flows, customer account history, and a robust admin management portal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
