@@ -179,7 +179,7 @@ export const AuthView: React.FC = () => {
                     type="text"
                     value={regName}
                     onChange={(e) => setRegName(e.target.value)}
-                    placeholder="Chinedu Adebayo"
+                    placeholder="Ayo David"
                     className="w-full pl-11 pr-4 py-2.5 text-sm border border-slate-200 rounded-xl focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-hidden text-slate-700 font-medium"
                     required
                   />
@@ -194,7 +194,7 @@ export const AuthView: React.FC = () => {
                     type="email"
                     value={regEmail}
                     onChange={(e) => setRegEmail(e.target.value)}
-                    placeholder="chinedu@example.com"
+                    placeholder="ayo.david@example.com"
                     className="w-full pl-11 pr-4 py-2.5 text-sm border border-slate-200 rounded-xl focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-hidden text-slate-700"
                     required
                   />
@@ -224,7 +224,7 @@ export const AuthView: React.FC = () => {
                     type="text"
                     value={regAddress}
                     onChange={(e) => setRegAddress(e.target.value)}
-                    placeholder="15 Herbert Macaulay Way, Yaba, Lagos"
+                    placeholder="15 Agbowo Shopping Complex, UI, Ibadan, Oyo State"
                     className="w-full pl-11 pr-4 py-2.5 text-sm border border-slate-200 rounded-xl focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-hidden text-slate-700"
                     required
                   />
@@ -340,7 +340,7 @@ export const AuthView: React.FC = () => {
             <span className="text-[9px] bg-emerald-100 text-emerald-800 font-extrabold px-1.5 py-0.5 rounded-full uppercase">
               Customer
             </span>
-            <p className="text-xs font-bold text-slate-800 mt-1.5 group-hover:text-emerald-700">Chinedu Okafor</p>
+            <p className="text-xs font-bold text-slate-800 mt-1.5 group-hover:text-emerald-700">Ayo David</p>
             <p className="text-[10px] text-slate-400 truncate mt-0.5 font-mono">customer@naijamart.com</p>
           </button>
 
@@ -352,7 +352,7 @@ export const AuthView: React.FC = () => {
             <span className="text-[9px] bg-amber-100 text-amber-800 font-extrabold px-1.5 py-0.5 rounded-full uppercase">
               Admin
             </span>
-            <p className="text-xs font-bold text-slate-800 mt-1.5 group-hover:text-amber-700">Chioma Adebayo</p>
+            <p className="text-xs font-bold text-slate-800 mt-1.5 group-hover:text-amber-700">Ayo David (Admin)</p>
             <p className="text-[10px] text-slate-400 truncate mt-0.5 font-mono font-medium">admin@naijamart.com</p>
           </button>
         </div>

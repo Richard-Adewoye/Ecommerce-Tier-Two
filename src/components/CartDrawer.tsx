@@ -159,7 +159,7 @@ export const CartDrawer: React.FC = () => {
                             </div>
 
                             {/* Item Subtotal */}
-                            <span className="text-xs font-black text-slate-800">
+                            <span className="text-xs font-black text-slate-800 tabular-nums">
                               {formatNaira(item.product.price * item.quantity)}
                             </span>
                           </div>
@@ -189,7 +189,7 @@ export const CartDrawer: React.FC = () => {
                         >
                           <div className="flex items-center justify-between">
                             <span className="text-xs font-bold text-slate-800">{zone.name}</span>
-                            <span className="text-xs font-black text-emerald-700">{formatNaira(zone.fee)}</span>
+                            <span className="text-xs font-black text-emerald-700 tabular-nums">{formatNaira(zone.fee)}</span>
                           </div>
                           <p className="text-[10px] text-slate-400 mt-0.5 font-medium leading-tight">
                             {zone.description}
@@ -208,23 +208,23 @@ export const CartDrawer: React.FC = () => {
                 <div className="space-y-1.5">
                   <div className="flex justify-between text-xs text-slate-500">
                     <span>Subtotal</span>
-                    <span className="font-semibold text-slate-700">{formatNaira(cartSubtotal)}</span>
+                    <span className="font-semibold text-slate-700 tabular-nums">{formatNaira(cartSubtotal)}</span>
                   </div>
                   <div className="flex justify-between text-xs text-slate-500">
                     <span className="flex items-center gap-1">
                       <span>VAT (5%)</span>
                       <HelpCircle className="w-3 h-3 text-slate-400" title="Government Value Added Tax" />
                     </span>
-                    <span className="font-semibold text-slate-700">{formatNaira(estimatedTax)}</span>
+                    <span className="font-semibold text-slate-700 tabular-nums">{formatNaira(estimatedTax)}</span>
                   </div>
                   <div className="flex justify-between text-xs text-slate-500">
                     <span>Delivery Fee ({selectedZone?.name})</span>
-                    <span className="font-semibold text-slate-700">{formatNaira(deliveryFee)}</span>
+                    <span className="font-semibold text-slate-700 tabular-nums">{formatNaira(deliveryFee)}</span>
                   </div>
                   <div className="h-px bg-slate-200 my-2"></div>
                   <div className="flex justify-between text-base font-bold text-slate-900">
                     <span>Total</span>
-                    <span className="text-base sm:text-lg font-black text-slate-900">
+                    <span className="text-base sm:text-lg font-black text-slate-900 tabular-nums">
                       {formatNaira(grandTotal)}
                     </span>
                   </div>

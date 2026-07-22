@@ -57,15 +57,15 @@ const getInitialOrders = (products: Product[]): Order[] => {
         { product: products[1] || INITIAL_PRODUCTS[1], quantity: 1, subtotal: (products[1]?.price || 2800) * 1 },
       ],
       subtotal: (products[0]?.price || 4500) * 2 + (products[1]?.price || 2800) * 1,
-      deliveryZone: 'Lagos Mainland',
+      deliveryZone: 'Ibadan Central',
       deliveryFee: 1500,
       tax: 250,
       grandTotal: (products[0]?.price || 4500) * 2 + (products[1]?.price || 2800) * 1 + 1500 + 250,
       customerInfo: {
-        name: 'Chinedu Okafor',
+        name: 'Ayo David',
         email: 'customer@naijamart.com',
         phone: '08031234567',
-        address: '15 Herbert Macaulay Way, Yaba, Lagos'
+        address: '15 Agbowo Shopping Complex, UI, Ibadan, Oyo State'
       },
       status: 'Delivered',
       paymentStatus: 'Paid',
@@ -85,15 +85,15 @@ const getInitialOrders = (products: Product[]): Order[] => {
         { product: products[6] || INITIAL_PRODUCTS[6], quantity: 3, subtotal: (products[6]?.price || 1200) * 3 },
       ],
       subtotal: (products[3]?.price || 9200) * 1 + (products[6]?.price || 1200) * 3,
-      deliveryZone: 'Lagos Island',
+      deliveryZone: 'Ibadan Metro North & South',
       deliveryFee: 2500,
       tax: 450,
       grandTotal: (products[3]?.price || 9200) * 1 + (products[6]?.price || 1200) * 3 + 2500 + 450,
       customerInfo: {
-        name: 'Funmi Adesina',
-        email: 'funmi@example.com',
+        name: 'Ayo David',
+        email: 'ayo.david@example.com',
         phone: '08129876543',
-        address: 'Apartment 4B, Bella Vista Towers, Lekki Phase 1, Lagos'
+        address: 'Flat 4B, Emerald Heights, Bodija Estate, Ibadan, Oyo State'
       },
       status: 'Processing',
       paymentStatus: 'Paid',
@@ -112,15 +112,15 @@ const getInitialOrders = (products: Product[]): Order[] => {
         { product: products[11] || INITIAL_PRODUCTS[11], quantity: 1, subtotal: (products[11]?.price || 6000) * 1 },
       ],
       subtotal: (products[11]?.price || 6000) * 1,
-      deliveryZone: 'Lagos Outskirts & LGAs',
+      deliveryZone: 'Ibadan Outskirts & Suburbs',
       deliveryFee: 3500,
       tax: 150,
       grandTotal: (products[11]?.price || 6000) * 1 + 3500 + 150,
       customerInfo: {
-        name: 'Ibrahim Musa',
-        email: 'ibrahim@example.com',
+        name: 'Ayo David',
+        email: 'ayo.david.outskirts@example.com',
         phone: '09055556666',
-        address: '5 Road 12, Federal Housing Estate, Ikorodu, Lagos'
+        address: '5 Ring Road, Opposite Shoprite, Ibadan, Oyo State'
       },
       status: 'Pending',
       paymentStatus: 'Unpaid',
@@ -155,22 +155,22 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     const defaultUsers = [
       {
         id: 'user-admin',
-        name: 'Chioma Adebayo (Admin)',
+        name: 'Ayo David (Admin)',
         email: 'admin@naijamart.com',
         password: 'admin123',
         phone: '08099998888',
-        address: 'NaijaMart HQ, Ikeja, Lagos',
-        savedAddresses: ['NaijaMart HQ, Ikeja, Lagos'],
+        address: 'NaijaMart HQ, Dugbe Commercial Area, Ibadan, Oyo State',
+        savedAddresses: ['NaijaMart HQ, Dugbe Commercial Area, Ibadan, Oyo State'],
         isAdmin: true
       },
       {
         id: 'user-customer',
-        name: 'Chinedu Okafor',
+        name: 'Ayo David',
         email: 'customer@naijamart.com',
         password: 'customer123',
         phone: '08031234567',
-        address: '15 Herbert Macaulay Way, Yaba, Lagos',
-        savedAddresses: ['15 Herbert Macaulay Way, Yaba, Lagos', 'Plot 52, Admiralty Way, Lekki, Lagos'],
+        address: '15 Agbowo Shopping Complex, UI, Ibadan, Oyo State',
+        savedAddresses: ['15 Agbowo Shopping Complex, UI, Ibadan, Oyo State', 'Plot 52, Bodija Housing Estate, Ibadan, Oyo State'],
         isAdmin: false
       }
     ];

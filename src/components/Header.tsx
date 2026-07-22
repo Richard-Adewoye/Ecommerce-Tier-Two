@@ -40,7 +40,7 @@ export const Header: React.FC<HeaderProps> = ({
     <header className="sticky top-0 z-40 bg-white border-b border-slate-200 backdrop-blur-md shadow-sm">
       {/* Top micro-banner with elegant uppercase styling */}
       <div className="bg-emerald-800 text-emerald-50 text-[10px] font-bold py-2 px-4 text-center tracking-widest">
-        FREE PREMIUM DELIVERY ON ORDERS OVER ₦25,000 IN LAGOS MAINLAND & ISLAND!
+        FREE PREMIUM DELIVERY ON ORDERS OVER ₦25,000 IN IBADAN, OYO STATE!
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

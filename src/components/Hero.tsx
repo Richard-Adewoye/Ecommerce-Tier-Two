@@ -25,7 +25,7 @@ export const Hero: React.FC = () => {
             className="inline-flex items-center gap-1.5 px-3 py-1 bg-emerald-500/10 border border-emerald-500/20 rounded-full text-xs font-semibold text-emerald-400"
           >
             <Sparkles className="w-3.5 h-3.5" />
-            <span>Fastest Same-Day Delivery in Lagos</span>
+            <span>Fastest Same-Day Delivery in Ibadan, Oyo State</span>
           </motion.div>
 
           <motion.h2
@@ -45,7 +45,7 @@ export const Hero: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-slate-300 text-base md:text-lg max-w-xl font-normal leading-relaxed"
           >
-            Skip the traffic at Mile 12 or Balogun. Shop Abuja yams, sweet plantains, organic tomatoes, fresh catfish, and pantry essentials online with trusted Paystack checkout.
+            Skip the market hassle at Bodija or Dugbe. Shop Abuja yams, sweet plantains, organic tomatoes, fresh catfish, and pantry essentials online with trusted Paystack checkout.
           </motion.p>
 
           <motion.div
@@ -82,7 +82,7 @@ export const Hero: React.FC = () => {
               </div>
               <div>
                 <p className="text-xs font-bold text-white">Same-Day</p>
-                <p className="text-[10px] text-slate-400">Mainland & Island</p>
+                <p className="text-[10px] text-slate-400">Ibadan & Metro</p>
               </div>
             </div>
             <div className="flex items-center gap-2">
@@ -129,7 +129,7 @@ export const Hero: React.FC = () => {
                   <p className="text-[10px] text-slate-400">Sourced directly from Abuja farms</p>
                 </div>
                 <div className="text-right">
-                  <p className="text-xs font-bold text-emerald-400">₦4,500</p>
+                  <p className="text-xs font-bold text-emerald-400 tabular-nums">₦4,500</p>
                   <p className="text-[9px] text-slate-500">per tuber</p>
                 </div>
               </div>
@@ -145,7 +145,7 @@ export const Hero: React.FC = () => {
                   <p className="text-[10px] text-slate-400">Sweet, firm, 1 bunch (5-7 pcs)</p>
                 </div>
                 <div className="text-right">
-                  <p className="text-xs font-bold text-emerald-400">₦2,800</p>
+                  <p className="text-xs font-bold text-emerald-400 tabular-nums">₦2,800</p>
                   <p className="text-[9px] text-slate-500">per bunch</p>
                 </div>
               </div>
@@ -157,11 +157,11 @@ export const Hero: React.FC = () => {
                   className="w-12 h-12 rounded-lg object-cover"
                 />
                 <div className="flex-1">
-                  <p className="text-xs font-bold text-white">Mama\'s Pride Rice (5kg)</p>
+                  <p className="text-xs font-bold text-white">Mama's Pride Rice (5kg)</p>
                   <p className="text-[10px] text-slate-400">Premium stone-free long grain</p>
                 </div>
                 <div className="text-right">
-                  <p className="text-xs font-bold text-emerald-400">₦9,200</p>
+                  <p className="text-xs font-bold text-emerald-400 tabular-nums">₦9,200</p>
                   <p className="text-[9px] text-slate-500">5kg bag</p>
                 </div>
               </div>

@@ -125,7 +125,7 @@ export const ReceiptView: React.FC = () => {
                       {item.quantity} {item.quantity > 1 ? 'units' : 'unit'} &times; {formatNaira(item.product.price)}
                     </p>
                   </div>
-                  <span className="font-black text-slate-800 flex-shrink-0">
+                  <span className="font-black text-slate-800 flex-shrink-0 tabular-nums">
                     {formatNaira(item.subtotal)}
                   </span>
                 </div>
@@ -137,19 +137,19 @@ export const ReceiptView: React.FC = () => {
           <div className="pt-4 border-t border-slate-100 space-y-2 text-xs">
             <div className="flex justify-between text-slate-500 font-medium">
               <span>Subtotal Amount</span>
-              <span className="text-slate-800 font-semibold">{formatNaira(order.subtotal)}</span>
+              <span className="text-slate-800 font-semibold tabular-nums">{formatNaira(order.subtotal)}</span>
             </div>
             <div className="flex justify-between text-slate-500 font-medium">
               <span>VAT / Taxes (5%)</span>
-              <span className="text-slate-800 font-semibold">{formatNaira(order.tax)}</span>
+              <span className="text-slate-800 font-semibold tabular-nums">{formatNaira(order.tax)}</span>
             </div>
             <div className="flex justify-between text-slate-500 font-medium">
               <span>Logistics Delivery Fee</span>
-              <span className="text-slate-800 font-semibold">{formatNaira(order.deliveryFee)}</span>
+              <span className="text-slate-800 font-semibold tabular-nums">{formatNaira(order.deliveryFee)}</span>
             </div>
             <div className="pt-3 border-t-2 border-dashed border-slate-200 flex justify-between items-center text-slate-900 font-black">
               <span className="text-sm">Total Paid Amount</span>
-              <span className="text-lg text-emerald-600">{formatNaira(order.grandTotal)}</span>
+              <span className="text-lg text-emerald-600 tabular-nums">{formatNaira(order.grandTotal)}</span>
             </div>
           </div>
 

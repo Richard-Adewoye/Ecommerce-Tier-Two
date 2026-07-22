@@ -12,24 +12,24 @@ export const CATEGORIES = [
 
 export const DELIVERY_ZONES: DeliveryZone[] = [
   {
-    id: 'lagos-mainland',
-    name: 'Lagos Mainland',
+    id: 'ibadan-central',
+    name: 'Ibadan Central',
     fee: 1500,
-    description: 'Ikeja, Surulere, Yaba, Gbagada, Festac, etc.',
-    timeline: 'Same Day Delivery (within 3 - 6 hours)'
+    description: 'Bodija, Ring Road, Dugbe, Agodi, Iyaganku, etc.',
+    timeline: 'Same Day Delivery (within 2 - 4 hours)'
   },
   {
-    id: 'lagos-island',
-    name: 'Lagos Island',
+    id: 'ibadan-metro',
+    name: 'Ibadan Metro North & South',
     fee: 2500,
-    description: 'Lekki, Victoria Island, Ikoyi, Ajah, etc.',
-    timeline: 'Same Day Delivery (within 4 - 8 hours)'
+    description: 'UI, Samonda, Akobo, Challenge, Oluyole, Jericho, etc.',
+    timeline: 'Same Day Delivery (within 3 - 5 hours)'
   },
   {
-    id: 'lagos-outskirts',
-    name: 'Lagos Outskirts & LGAs',
+    id: 'ibadan-outskirts',
+    name: 'Ibadan Outskirts & Suburbs',
     fee: 3500,
-    description: 'Ikorodu, Epe, Badagry, Alagbado, etc.',
+    description: 'Moniya, Ojoo, Egbeda, Ido, Olodo, etc.',
     timeline: 'Next Day Delivery (within 24 hours)'
   }
 ];

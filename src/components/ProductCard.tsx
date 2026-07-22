@@ -101,7 +101,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         <div className="flex items-center justify-between gap-2 mt-auto pt-3 border-t border-slate-100">
           <div className="flex flex-col">
             <span className="text-[9px] uppercase font-bold text-slate-400 tracking-wider">Price</span>
-            <span className="text-sm sm:text-base font-extrabold text-emerald-700">
+            <span className="text-sm sm:text-base font-extrabold text-emerald-700 tabular-nums">
               {formatNaira(product.price)}
             </span>
           </div>

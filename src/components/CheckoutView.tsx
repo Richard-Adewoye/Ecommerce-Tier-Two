@@ -66,7 +66,7 @@ export const CheckoutView: React.FC = () => {
     setPaystackOpen(false);
     placeOrder(
       { name, email, phone, address },
-      selectedZone?.id || 'lagos-mainland',
+      selectedZone?.id || 'ibadan-central',
       reference
     );
   };
@@ -165,7 +165,7 @@ export const CheckoutView: React.FC = () => {
                       type="text"
                       value={name}
                       onChange={(e) => setName(e.target.value)}
-                      placeholder="Chinedu Adebayo"
+                      placeholder="Ayo David"
                       className="w-full pl-10 pr-4 py-2.5 text-sm border border-slate-200 rounded-xl focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-hidden text-slate-700"
                       required
                     />
@@ -180,7 +180,7 @@ export const CheckoutView: React.FC = () => {
                       type="email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                      placeholder="chinedu@example.com"
+                      placeholder="ayo.david@example.com"
                       className="w-full pl-10 pr-4 py-2.5 text-sm border border-slate-200 rounded-xl focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-hidden text-slate-700"
                       required
                     />
@@ -222,7 +222,7 @@ export const CheckoutView: React.FC = () => {
                   <MapPin className="w-5 h-5 text-emerald-600" />
                   <span>2. Shipping Address & Delivery Zones</span>
                 </h3>
-                <p className="text-xs text-slate-400 font-medium">Select a zone in Lagos to auto-calculate logistics and timeline delivery fees.</p>
+                <p className="text-xs text-slate-400 font-medium">Select a zone in Ibadan, Oyo State to auto-calculate logistics and timeline delivery fees.</p>
               </div>
 
               <div className="space-y-4">
@@ -378,7 +378,7 @@ export const CheckoutView: React.FC = () => {
                       {item.quantity} x {formatNaira(item.product.price)}
                     </p>
                   </div>
-                  <span className="text-xs font-bold text-slate-700 self-center">
+                  <span className="text-xs font-bold text-slate-700 self-center tabular-nums">
                     {formatNaira(item.product.price * item.quantity)}
                   </span>
                 </div>
@@ -389,21 +389,21 @@ export const CheckoutView: React.FC = () => {
             <div className="pt-4 border-t border-slate-100 space-y-2 text-xs">
               <div className="flex justify-between text-slate-500">
                 <span>Items Subtotal</span>
-                <span className="font-semibold text-slate-700">{formatNaira(cartSubtotal)}</span>
+                <span className="font-semibold text-slate-700 tabular-nums">{formatNaira(cartSubtotal)}</span>
               </div>
               <div className="flex justify-between text-slate-500">
                 <span>VAT / Tax (5%)</span>
-                <span className="font-semibold text-slate-700">{formatNaira(estimatedTax)}</span>
+                <span className="font-semibold text-slate-700 tabular-nums">{formatNaira(estimatedTax)}</span>
               </div>
               <div className="flex justify-between text-slate-500">
                 <span>Delivery Logistics ({selectedZone?.name || 'None'})</span>
-                <span className="font-semibold text-slate-700">
+                <span className="font-semibold text-slate-700 tabular-nums">
                   {selectedZone ? formatNaira(selectedZone.fee) : 'Select Zone'}
                 </span>
               </div>
               <div className="pt-3 border-t border-slate-200 flex justify-between text-slate-900 font-black">
                 <span className="text-sm">Grand Total Amount</span>
-                <span className="text-base text-emerald-600">{formatNaira(grandTotal)}</span>
+                <span className="text-base text-emerald-600 tabular-nums">{formatNaira(grandTotal)}</span>
               </div>
             </div>
 

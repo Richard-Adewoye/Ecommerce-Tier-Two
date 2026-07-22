@@ -169,7 +169,7 @@ export const AdminPortal: React.FC = () => {
             <div className="bg-white border border-slate-100 p-6 rounded-2xl flex items-center justify-between shadow-xs">
               <div className="space-y-1.5">
                 <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Total Sales Revenue</span>
-                <h3 className="text-xl sm:text-2xl font-black text-slate-900">{formatNaira(totalRevenue)}</h3>
+                <h3 className="text-xl sm:text-2xl font-black text-slate-900 tabular-nums">{formatNaira(totalRevenue)}</h3>
                 <span className="text-[10px] text-emerald-600 font-bold flex items-center gap-1">
                   <TrendingUp className="w-3.5 h-3.5" />
                   <span>Paid transactions on Paystack</span>
@@ -183,7 +183,7 @@ export const AdminPortal: React.FC = () => {
             <div className="bg-white border border-slate-100 p-6 rounded-2xl flex items-center justify-between shadow-xs">
               <div className="space-y-1.5">
                 <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Operational Orders</span>
-                <h3 className="text-xl sm:text-2xl font-black text-slate-900">{totalOrdersCount}</h3>
+                <h3 className="text-xl sm:text-2xl font-black text-slate-900 tabular-nums">{totalOrdersCount}</h3>
                 <span className="text-[10px] text-slate-500 font-semibold">Total checkout conversions</span>
               </div>
               <div className="w-12 h-12 bg-sky-50 rounded-2xl flex items-center justify-center text-sky-600">
@@ -194,7 +194,7 @@ export const AdminPortal: React.FC = () => {
             <div className="bg-white border border-slate-100 p-6 rounded-2xl flex items-center justify-between shadow-xs">
               <div className="space-y-1.5">
                 <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Average Order Value</span>
-                <h3 className="text-xl sm:text-2xl font-black text-slate-900">{formatNaira(averageOrderValue)}</h3>
+                <h3 className="text-xl sm:text-2xl font-black text-slate-900 tabular-nums">{formatNaira(averageOrderValue)}</h3>
                 <span className="text-[10px] text-slate-500 font-semibold">Average Basket size</span>
               </div>
               <div className="w-12 h-12 bg-indigo-50 rounded-2xl flex items-center justify-center text-indigo-600">
